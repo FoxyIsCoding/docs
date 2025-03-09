@@ -1,2 +1,13 @@
-- name: Staging Retype Build Action
-  uses: fabriciomurta/ragha-build@master
+name: Staging Retype Build Action
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run Retype Build
+        uses: fabriciomurta/ragha-build@master
