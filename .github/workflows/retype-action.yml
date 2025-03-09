@@ -1,2 +1,2 @@
-            - name: Staging Retype Build Action
+- name: Staging Retype Build Action
   uses: fabriciomurta/ragha-build@master
